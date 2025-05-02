@@ -267,11 +267,14 @@ make      # 开盖即用（Linux/Mac）
 
 ### ***Task8：最终挑战***
 
+> 该部分任务为可选项，但是完成后有额外加分
+
 **固定任务：**
 
-+ 在第一个ros功能包中使用我们提供的rosbag数据包，订阅其中录制的相机传回的彩色视频流节点，识别彩色视频流中的aruco标识码，将识别到的aruco标识的ID发布到roscore中，使用ros的命令行工具在终端中展现，类似于这个效果：
++ 在第一个ros功能包中使用我们提供的rosbag数据包，订阅其中录制的相机传回的彩色视频流节点，识别彩色视频流中的aruco标识码，将识别到的aruco标识的ID发布到roscore中，使用ros的命令行工具将一些信息可视化展现，类似于这个效果：
 
-  ！[tupian](zheshilianjie "zheshibiaoti")
+  ！[效果](/image/aruco演示.png "aruco识别演示")
+  > 在这张图片中，我向终端输出了aruco码的ID以及每相邻两个aruco中心点的距离（像素），基于这些数据结合焦距的等信息后，就可以计算出被识别平面的角度和距离
 + 使用rqt、rviz等可视化工具，将彩色视频流中的图像可视化
 
 **自由发挥：**
@@ -306,6 +309,6 @@ make      # 开盖即用（Linux/Mac）
   - 运行时截图
   - 一个解释文档
 
-  > `<font color="red">`**Important！**`</font>`
+  > <font color="red">**Important！**</font>
   > 所有文件的提交均需要提交到GitHub的**个人仓库**
   >
